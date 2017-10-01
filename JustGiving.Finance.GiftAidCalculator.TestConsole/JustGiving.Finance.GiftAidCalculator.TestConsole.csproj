@@ -44,9 +44,16 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UKTaxClient.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\JustGiving.Finance.Core\JustGiving.Finance.Core.csproj">
+      <Project>{07D21509-C673-4E53-ADE6-580EC94828C7}</Project>
+      <Name>JustGiving.Finance.Core</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

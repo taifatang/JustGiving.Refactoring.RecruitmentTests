@@ -3,7 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26430.6
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JustGiving.Finance", "JustGiving.Finance\JustGiving.Finance.csproj", "{0D9F3333-3CCF-462B-98E7-BD1E74414867}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{B1517894-D6D5-4966-B126-96D651F6CA8B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{55AA5FE5-0D98-436B-96F9-10EE7CE94A6F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JustGiving.Finance.Core", "JustGiving.Finance.Core\JustGiving.Finance.Core.csproj", "{07D21509-C673-4E53-ADE6-580EC94828C7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JustGiving.Finance.Core.UnitTests", "JustGiving.Finance.Core.UnitTests\JustGiving.Finance.Core.UnitTests.csproj", "{75A93CFF-EAD7-446F-903E-C73A16714757}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JustGiving.Finance.Core.AcceptanceTests", "JustGiving.Finance.Core.AcceptanceTests\JustGiving.Finance.Core.AcceptanceTests.csproj", "{69D20AF8-27C3-4B07-B1A9-C7997CC70D70}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JustGiving.Finance.GiftAidCalculator.TestConsole", "JustGiving.Finance.GiftAidCalculator.TestConsole\JustGiving.Finance.GiftAidCalculator.TestConsole.csproj", "{288C791B-5118-41BE-886D-FEE1712D3E80}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,12 +21,30 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{0D9F3333-3CCF-462B-98E7-BD1E74414867}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0D9F3333-3CCF-462B-98E7-BD1E74414867}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0D9F3333-3CCF-462B-98E7-BD1E74414867}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0D9F3333-3CCF-462B-98E7-BD1E74414867}.Release|Any CPU.Build.0 = Release|Any CPU
+		{07D21509-C673-4E53-ADE6-580EC94828C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07D21509-C673-4E53-ADE6-580EC94828C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07D21509-C673-4E53-ADE6-580EC94828C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07D21509-C673-4E53-ADE6-580EC94828C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75A93CFF-EAD7-446F-903E-C73A16714757}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75A93CFF-EAD7-446F-903E-C73A16714757}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75A93CFF-EAD7-446F-903E-C73A16714757}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75A93CFF-EAD7-446F-903E-C73A16714757}.Release|Any CPU.Build.0 = Release|Any CPU
+		{69D20AF8-27C3-4B07-B1A9-C7997CC70D70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69D20AF8-27C3-4B07-B1A9-C7997CC70D70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69D20AF8-27C3-4B07-B1A9-C7997CC70D70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69D20AF8-27C3-4B07-B1A9-C7997CC70D70}.Release|Any CPU.Build.0 = Release|Any CPU
+		{288C791B-5118-41BE-886D-FEE1712D3E80}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{288C791B-5118-41BE-886D-FEE1712D3E80}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{288C791B-5118-41BE-886D-FEE1712D3E80}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{288C791B-5118-41BE-886D-FEE1712D3E80}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{07D21509-C673-4E53-ADE6-580EC94828C7} = {B1517894-D6D5-4966-B126-96D651F6CA8B}
+		{75A93CFF-EAD7-446F-903E-C73A16714757} = {55AA5FE5-0D98-436B-96F9-10EE7CE94A6F}
+		{69D20AF8-27C3-4B07-B1A9-C7997CC70D70} = {55AA5FE5-0D98-436B-96F9-10EE7CE94A6F}
+		{288C791B-5118-41BE-886D-FEE1712D3E80} = {55AA5FE5-0D98-436B-96F9-10EE7CE94A6F}
 	EndGlobalSection
 EndGlobal
